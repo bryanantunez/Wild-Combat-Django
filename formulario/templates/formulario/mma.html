@@ -1,3 +1,4 @@
+{% load static %}
 <!doctype html>
 <html lang="es">
 
@@ -15,14 +16,14 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@200&display=swap" rel="stylesheet">
     <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
-    <link rel="stylesheet" href="mma.css">
+    <link type="text/css" rel="stylesheet" href="{% static 'formulario/css/mma.css' %}">
     <title>MMA - Wild Combat</title>
 </head>
 
 <body>
     <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
         <div class="container">
-            <a class="navbar-brand" href="index.html">
+            <a class="navbar-brand" href="{% url 'home' %}">
                 <h3><b>WC</b></h3>
             </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -35,11 +36,11 @@
                     </li>
 
                     <li clsas="nav-item">
-                        <a class="nav-link" href="eventos.html" id="calendario">EVENTOS</a>
+                        <a class="nav-link" href="{% url 'eventos' %}" id="calendario">EVENTOS</a>
                     </li>
 
                     <li clsas="nav-item">
-                        <a class="nav-link" href="formu.html" id="contacto"><b>ENTRENA CON NOSOTROS</b></a>
+                        <a class="nav-link" href="{% url 'formu' %}" id="contacto"><b>ENTRENA CON NOSOTROS</b></a>
                     </li>
                 </ul>
             </div>
@@ -79,7 +80,7 @@
                             </div>
                         </div>
                     </div>
-                    <img src="img/mmacircular2.jpg" class="rounded-circle" alt="Cinque Terre">
+                    <img src="{% static 'formulario/img/mmacircular2.jpg' %}" class="rounded-circle" alt="Cinque Terre">
                 </div>
             </div>
         </div>
@@ -97,8 +98,8 @@
                 <div class="row">
                     <div class="col-md-4">
                         <div class="carta">
-                            <div class="img1"><img src="img/boxeador.jpg" alt=""></div>
-                            <div class="img2"><img src="img/profe1.jpg" alt=""></div>
+                            <div class="img1"><img src="{% static 'formulario/img/boxeador.jpg' %}" alt=""></div>
+                            <div class="img2"><img src="{% static 'formulario/img/profe1.jpg' %}" alt=""></div>
                             <div class="main-text">
                                 <h2>Juan Soto </h2>
                                 <p class="parrafo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod aliquam nihil consequatur vel facilis neque tempora ab corrupti distinctio corporis? Magnam doloremque dolorem adipisci unde qui ut aut, voluptatibus laboriosam.
@@ -115,8 +116,8 @@
                     </div>
                     <div class="col-md-4">
                         <div class="carta">
-                            <div class="img1"><img src="img/boxeador5.jpg" alt=""></div>
-                            <div class="img2"><img src="img/profe2.jpg" alt=""></div>
+                            <div class="img1"><img src="{% static 'formulario/img/boxeador5.jpg' %}" alt=""></div>
+                            <div class="img2"><img src="{% static 'formulario/img/profe2.jpg' %}" alt=""></div>
                             <div class="main-text">
                                 <h2>Ramón Lara</h2>
                                 <p class="parrafo"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat iure magnam aut veritatis aperiam, doloribus dolores minus nihil consequuntur et expedita explicabo laborum, dolore, eligendi itaque commodi distinctio.
@@ -134,8 +135,8 @@
                     </div>
                     <div class="col-md-4">
                         <div class="carta">
-                            <div class="img1"><img src="img/boxeador2.jpg" alt=""></div>
-                            <div class="img2"><img src="img/profe3.jpg" alt=""></div>
+                            <div class="img1"><img src="{% static 'formulario/img/boxeador2.jpg' %}" alt=""></div>
+                            <div class="img2"><img src="{% static 'formulario/img/profe3.jpg' %}" alt=""></div>
                             <div class="main-text">
                                 <h2>Pedro González</h2>
                                 <p class="parrafo">Lorem ipsum dolor sit amet consectetur adipisicing elit. At, repellat architecto reiciendis ut blanditiis numquam tenetur laborum quisquam porro sunt et rem consequatur quae cupiditate, error soluta a corrupti in.

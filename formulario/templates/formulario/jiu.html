@@ -1,3 +1,4 @@
+{% load static %}
 <!doctype html>
 <html lang="es">
 
@@ -15,14 +16,14 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@200&display=swap" rel="stylesheet">
     <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
-    <link rel="stylesheet" href="jiu.css">
+    <link type="text/css" rel="stylesheet" href="{% static 'formulario/css/jiu.css' %}">
     <title>Jiu Jitsu - Wild Combat</title>
 </head>
 
 <body>
     <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
         <div class="container">
-            <a class="navbar-brand" href="index.html">
+            <a class="navbar-brand" href="{% url 'home' %}">
                 <h3><b>WC</b></h3>
             </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -34,10 +35,10 @@
                         <a class="nav-link" href="#car">PROFESORES</a>
                     </li>
                     <li clsas="nav-item">
-                        <a class="nav-link" href="eventos.html" id="calendario">EVENTOS</a>
+                        <a class="nav-link" href="{% url 'eventos' %}" id="calendario">EVENTOS</a>
                     </li>
                     <li clsas="nav-item">
-                        <a class="nav-link" href="formu.html" id="contacto"><b>ENTRENA CON NOSOTROS</b></a>
+                        <a class="nav-link" href="{% url 'formu' %}" id="contacto"><b>ENTRENA CON NOSOTROS</b></a>
                     </li>
                 </ul>
             </div>
@@ -73,7 +74,7 @@
                             </div>
                         </div>
                     </div>
-                    <img src="img/jiu.jpg" class="rounded-circle" alt="Cinque Terre">
+                    <img src="{% static 'formulario/img/jiu.jpg' %}" class="rounded-circle" alt="Cinque Terre">
                 </div>
             </div>
         </div>
@@ -92,8 +93,8 @@
                 <div class="row">
                     <div class="col-md-4">
                         <div class="carta">
-                            <div class="img1"><img src="img/boxeador5.jpg" alt=""></div>
-                            <div class="img2"><img src="img/profe2.jpg" alt=""></div>
+                            <div class="img1"><img src="{% static 'formulario/img/boxeador5.jpg' %}" alt=""></div>
+                            <div class="img2"><img src="{% static 'formulario/img/profe2.jpg' %}" alt=""></div>
                             <div class="main-text">
                                 <h2>José Tomás Del Carmen</h2>
                                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsa laudantium distinctio, iure doloribus obcaecati, animi magni, labore amet reiciendis dignissimos ad quidem voluptatem perferendis vitae in laboriosam ea quod
@@ -111,8 +112,8 @@
                     </div>
                     <div class="col-md-4">
                         <div class="carta">
-                            <div class="img1"><img src="img/boxeador2.jpg" alt=""></div>
-                            <div class="img2"><img src="img/profe3.jpg" alt=""></div>
+                            <div class="img1"><img src="{% static 'formulario/img/boxeador2.jpg' %}" alt=""></div>
+                            <div class="img2"><img src="{% static 'formulario/img/profe3.jpg' %}" alt=""></div>
                             <div class="main-text">
                                 <h2>José Tomás Del Carmen</h2>
                                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsa laudantium distinctio, iure doloribus obcaecati, animi magni, labore amet reiciendis dignissimos ad quidem voluptatem perferendis vitae in laboriosam ea quod
@@ -130,8 +131,8 @@
                     </div>
                     <div class="col-md-4">
                         <div class="carta">
-                            <div class="img1"><img src="img/boxeador.jpg" alt=""></div>
-                            <div class="img2"><img src="img/profe1.jpg" alt=""></div>
+                            <div class="img1"><img src="{% static 'formulario/img/boxeador.jpg' %}" alt=""></div>
+                            <div class="img2"><img src="{% static 'formulario/img/profe1.jpg' %}" alt=""></div>
                             <div class="main-text">
                                 <h2>José Tomás Del Carmen</h2>
                                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsa laudantium distinctio, iure doloribus obcaecati, animi magni, labore amet reiciendis dignissimos ad quidem voluptatem perferendis vitae in laboriosam ea quod
