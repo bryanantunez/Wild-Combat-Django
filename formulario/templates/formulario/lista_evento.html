@@ -1,0 +1,71 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agregar Evento</title>
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link type="text/css" rel="stylesheet" href="{% static 'formulario/css/lista_event.css' %}">
+</head>
+
+<nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+    <div class="container">
+        <a class="navbar-brand" href="{% url 'home'%}">
+            <h3><b>WC</b></h3>
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <ion-icon name="menu-outline"></ion-icon>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav me-auto mb-2 mb-md-0">
+                <li class="nav-item">
+                    <a data-scroll class="nav-link" href="{% url 'home'%}">DISCIPLINAS</a>
+                </li>
+
+                <li class="nav-item">
+                    <a data-scroll class="nav-link" href="{% url 'home'%}">PRECIOS</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="{% url 'eventos'%}" id=" calendario ">EVENTOS</a>
+                </li>
+                <div></div>
+                <li class="nav-item">
+                    <a class="nav-link" href="{% url 'formu'%}" id="contacto">ENTRENA CON NOSOTROS</a>
+                </li>
+            </ul>
+        </div>
+
+    </div>
+</nav>
+
+<body>
+
+    <div class="list-evento">
+
+        <div class="row">
+            <form method="post" action="" id="formulario">
+                {% csrf_token %}
+
+                <div class="form_group">
+                    {{ form.as_table }}
+
+                </div>
+                <input type="submit" class="btn btn-danger" id="enviar" value="Enviar">
+                <input type="reset" class="btn btn-primary" id="limnpiar" value="Limpiar">
+                <div id="error" class="alert alert-success" role="alert">
+                    {{ mensaje }}
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js "></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js "></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js "></script>
+</body>
+
+</html>
