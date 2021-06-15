@@ -1,9 +1,11 @@
-html {
-    scroll-behavior: smooth;
-}
-
 body {
     font-family: 'Merriweather Sans', sans-serif;
+    background-color: rgb(216, 216, 216);
+}
+
+.list-evento {
+    margin-top: 90px;
+    margin-left: 60px;
 }
 
 h1 {
@@ -42,44 +44,6 @@ section {
     margin-top: 60px;
 }
 
-.btn {
-    font-size: 14px;
-    padding: 15px 26px;
-    border-radius: 2px;
-    display: inline-block;
-}
-
-.btn-blanco {
-    background-color: #ffffff;
-    color: #000000;
-    border: 2px solid #ffffff;
-}
-
-.btn-blanco:hover {
-    color: #000000;
-}
-
-.btn-negro:hover {
-    color: #ffffff;
-}
-
-.btn-negro {
-    background-color: #000000;
-    color: #ffffff;
-    border: #000000;
-}
-
-.btn-trans {
-    background-color: transparent;
-    color: #ffffff;
-    border: 2px solid #ffffff;
-}
-
-.btn i {
-    font-size: 14px;
-    margin-left: 5px;
-}
-
 .full-width {
     width: 100%;
 }
@@ -98,71 +62,6 @@ section {
     max-width: 800px;
     margin: 0 auto 60px auto;
     text-align: center;
-}
-
-.disciplinas-container {
-    position: relative;
-    overflow: hidden;
-    margin: 10px 0;
-    border-radius: 2px;
-}
-
-.disciplinas-container img {
-    -moz-transition: all 0.8s;
-    -webkit-transition: all 0.8s;
-    transition: all 0.8s;
-}
-
-.disciplinas-container:hover img {
-    -moz-transform: scale(1.2);
-    -webkit-transform: scale(1.2);
-    transform: scale(1.2);
-}
-
-.disciplinas-details {
-    position: absolute;
-    bottom: 25px;
-    left: 25px;
-    z-index: 200;
-}
-
-.disciplinas-details h2 {
-    margin-bottom: 0px;
-}
-
-.disciplinas-details a h2,
-.disciplinas-details a p {
-    color: rgb(252, 252, 252);
-}
-
-.precios-container {
-    margin: 15px 0;
-}
-
-.planes {
-    padding: 50px 80px;
-    border-radius: 2px;
-    min-width: 450px;
-}
-
-.plan-blanco {
-    background-color: #ffffff;
-    border: 2px solid #000000;
-}
-
-.plan-negro {
-    background-color: #000000;
-    border: 2px solid #000000;
-    color: #ffffff;
-}
-
-.planes h2 {
-    font-size: 60px;
-    font-weight: 600;
-}
-
-.planes span {
-    font-size: 20px;
 }
 
 
@@ -194,10 +93,6 @@ footer .footer-col {
 footer .footer-below {
     padding: 25px 0;
     background-color: #233140;
-}
-
-.evento {
-    margin-top: 100px;
 }
 
 @media (min-width: 576px) {

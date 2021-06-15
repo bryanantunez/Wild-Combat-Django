@@ -1,3 +1,140 @@
-body {
-    background-color: rgb(204, 204, 204, 0.3);
-}
+    body {
+        font-family: 'Merriweather Sans', sans-serif;
+        background-color: rgb(216, 216, 216);
+    }
+    
+    .lista {
+        background-color: rgb(252, 252, 252);
+    }
+    
+    .mod {
+        text-align: center;
+    }
+    
+    h1 {
+        font-size: 66px;
+        font-weight: 600;
+        line-height: 80px;
+        font-family: 'Zilla Slab Highlight', cursive;
+    }
+    
+    h2 {
+        font-size: 48px;
+        margin-bottom: 30px;
+    }
+    
+    .tm {
+        font-size: 20px;
+    }
+    
+    a:hover {
+        text-decoration: none;
+    }
+    
+    .btn {
+        font-size: 14px;
+        padding: 15px 26px;
+        border-radius: 2px;
+        display: inline-block;
+    }
+    
+    .btn-blanco {
+        background-color: #0ea300;
+        color: #000000;
+        border: 2px solid #000000;
+    }
+    
+    .btn-blanco:hover {
+        color: #eb0606;
+    }
+    
+    section {
+        padding: 120px 0;
+    }
+    
+    .topmargin-xs {
+        margin-top: 15px;
+    }
+    
+    .topmargin-sm {
+        margin-top: 30px;
+    }
+    
+    .topmargin-lg {
+        margin-top: 60px;
+    }
+    
+    .full-width {
+        width: 100%;
+    }
+    
+    #hero {
+        background-image: url("../../formulario/img/ufc.jpg");
+        background-size: cover;
+        padding-top: 300px;
+        min-height: 700px;
+        color: rgb(250, 250, 250);
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+    }
+    
+    .content-center {
+        max-width: 800px;
+        margin: 0 auto 60px auto;
+        text-align: center;
+    }
+    /* footer */
+    
+    .footer-style {
+        padding-top: 50px;
+        background-color: #2C3E50;
+    }
+    
+    footer {
+        color: white;
+    }
+    
+    footer h3 {
+        margin-bottom: 30px;
+        font-weight: 800;
+    }
+    
+    footer .footer-above {
+        padding-top: 50px;
+        background-color: #2C3E50;
+    }
+    
+    footer .footer-col {
+        margin-bottom: 50px;
+    }
+    
+    footer .footer-below {
+        padding: 25px 0;
+        background-color: #233140;
+    }
+    
+    @media (min-width: 576px) {
+        h1 {
+            font-size: 40px;
+            line-height: normal;
+        }
+        .disciplinas-details {
+            font-size: 40px;
+            line-height: normal;
+        }
+        .planes {
+            min-width: unset;
+            padding: 40px;
+        }
+    }
+    
+    @media (min-width: 768px) {
+        .planes {
+            min-width: unset;
+            padding: 40px 20px;
+        }
+    }
+    
+    @media (min-width: 992px) {}
+    
+    @media (min-width: 1200px) {}
