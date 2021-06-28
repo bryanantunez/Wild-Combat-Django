@@ -38,6 +38,10 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'formulario',
+<<<<<<< HEAD
+=======
+    'rest_gym',
+>>>>>>> origin/Rama-de-Javiera
 ]
 
 MIDDLEWARE = [

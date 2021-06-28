@@ -19,5 +19,9 @@ from django.urls import path, include
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('',include('formulario.urls')),
+<<<<<<< HEAD
+=======
+    path('api/',include('rest_gym.urls')),
+>>>>>>> origin/Rama-de-Javiera
 ]
 
