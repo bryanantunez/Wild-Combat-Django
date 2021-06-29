@@ -5,3 +5,4 @@ urlpatterns = [
     path('lista_eventos',lista_eventos,name='lista_eventos'),
     path('detalle_evento/<id>',detalle_evento,name='detalle_evento'),
 ]
+
