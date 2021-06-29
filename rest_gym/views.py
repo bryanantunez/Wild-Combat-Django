@@ -1,5 +1,5 @@
 from django.shortcuts import render
-from rest_framework import serializers, status
+from rest_framework import status
 from rest_framework.decorators import api_view
 from rest_framework.response import Response
 from rest_framework.parsers import JSONParser
@@ -16,6 +16,7 @@ def lista_eventos(request):
         return Response(serializer.data)
     elif request.method == 'POST':
         data = JSONParser().parse(request)
+        print(data)
         serializer = EventoSerializer(data=data)
         if(serializer.is_valid()):
             serializer.save()
@@ -31,8 +32,8 @@ def detalle_evento(request,id):
         return Response(status=status.HTTP_404_NOT_FOUND)
     
     if request.method =='GET':
-        serializers = EventoSerializer(evento)
-        return Response(serializers.data)
+        serializer = EventoSerializer(evento)
+        return Response(serializer.data)
     if request.method == 'PUT':
         data = JSONParser().parse(request)
         serializer = EventoSerializer(evento,data=data)
