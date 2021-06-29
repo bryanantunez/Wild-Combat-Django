@@ -121,7 +121,7 @@ section {
 }
 
 #hero {
-    background-image: url(img/boxportada.jpg);
+    background-image: url("../../formulario/img/boxportada.jpg");
     background-size: cover;
     padding-top: 300px;
     min-height: 700px;

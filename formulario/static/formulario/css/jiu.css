@@ -121,7 +121,7 @@ section {
 }
 
 #hero {
-    background-image: url(img/jiujitsuportada2.jpg);
+    background-image: url("../../formulario/img/jiujitsuportada2.jpg");
     background-size: cover;
     padding-top: 300px;
     min-height: 700px;
