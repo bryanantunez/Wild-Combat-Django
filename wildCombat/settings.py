@@ -66,7 +66,7 @@ ROOT_URLCONF = 'wildCombat.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [os.path.join(FORMULARIO_DIR, 'templates')],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -95,8 +95,8 @@ DATABASES = 	DATABASES = {
         'default': {
             'ENGINE': 'django.db.backends.oracle',
             'NAME': '127.0.0.1:1521/XEPDB1',
-            'USER':'GYM',
-            'PASSWORD': 'GYM',
+            'USER':'GIM',
+            'PASSWORD': 'GIM',
             'TEST':{
                 'USER':'default_test',
                 'TBLSPACE':'default_test_tbls',
