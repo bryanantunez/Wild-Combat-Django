@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'rest_framework',
     'formulario',
+
     'rest_gym',
     
     'django.contrib.sites',
@@ -49,6 +50,9 @@ INSTALLED_APPS = [
     'allauth.socialaccount.providers.google',
     
     'rest_framework.authtoken',
+
+    'rest_gym',
+
 ]
 
 MIDDLEWARE = [

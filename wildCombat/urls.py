@@ -22,5 +22,7 @@ urlpatterns = [
     path('',include('formulario.urls')),
     path('api/',include('rest_gym.urls')),
     path('accounts/', include('allauth.urls')),
+    path('api/',include('rest_gym.urls')),
+
 ]
 
