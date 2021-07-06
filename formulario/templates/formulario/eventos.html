@@ -70,8 +70,9 @@
                     <th>Nombre del Evento</th>
                     <th>Fecha</th>
                     <th>Deporte que se practicará</th>
+                    {% if request.user.is_authenticated %}
                     <th scope="col">Modificar</th>
-                    <th scope="col">Eliminar</th>
+                    <th scope="col">Eliminar</th> {% endif %}
                 </tr>
                 {% for veh in eventos%}
                 <tr>
@@ -79,19 +80,24 @@
                     <td>{{veh.nombreEvento}}</td>
                     <td>{{veh.fechaEvento}}</td>
                     <td>{{veh.deporte}}</td>
+                    {% if request.user.is_authenticated %}
                     <td>
                         <a class="mod" href="{% url 'mod_evento' veh.idEvento %}"><img src="{% static 'formulario/img/pen.png' %}" width="30px" height="30px" alt=""></a>
                     </td>
                     <td>
                         <a class="eliminar" href="{% url 'borrar_evento' veh.idEvento %}"><img src="{% static 'formulario/img/delete.png' %}" width="30px" height="30px" alt=""></a>
                     </td>
+                    {% endif %}
                 </tr>
                 {% endfor %}
 
             </table>
+            {% if request.user.is_authenticated %}
             <div class="agregar">
                 <a class="mas" href="{% url 'lista_evento' %}"><img src="{% static 'formulario/img/mas.png' %}" width="30px" height="30px" alt=""></a>
             </div>
+            {% endif %}
+
 
 
 
